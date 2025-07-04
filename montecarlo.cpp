@@ -2,8 +2,8 @@
 #include <vector>
 #include <cmath>
 
-using namespace std;
-
+using std::cout;
+using std::endl;
 
 class Coord {
 private:
@@ -35,6 +35,9 @@ bool checkSquare(Coord point, int radius) {
 int main(int argc, char const *argv[])
 {
   srand(time({}));
+
+  
+
   const long points = 100000000;
   const int radius = 1000;
 
@@ -65,12 +68,6 @@ int main(int argc, char const *argv[])
   cout << "In circle: " << inCircle << endl;
   cout << "In square: " << inSquare << endl;
   cout << "Ratio: " << inCircle / inSquare << endl;
-  
-  
-  
-
-
-
 
   return 0;
 }
